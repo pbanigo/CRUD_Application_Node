@@ -1,10 +1,10 @@
-<% for(var i = 0; i < users.length; i++) { %>
+<% for(var i = 0; i < drugs.length; i++) { %>
 <tr>
     <td><%= i + 1 %></td>
-    <td><%= users[i].name %></td>
-    <td><%= users[i].email %></td>
-    <td><%= users[i].gender %></td>
-    <td><%= users[i].status %></td>
+    <td><%= drugs[i].name %></td>
+    <td><%= drugs[i].card %></td>
+    <td><%= drugs[i].pack %></td>
+    <td><%= drugs[i].perDay %></td>
     <td>
         <a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update">
             <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
